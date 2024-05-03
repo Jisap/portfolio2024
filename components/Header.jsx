@@ -30,7 +30,11 @@ const Header = () => {
       <Logo />
       {/* nav & buttons */}
       <div className='flexCenter gap-x-8'>
-        <Nav />
+        <Nav 
+          containerStyles={'hidden xl:flex gap-x-12 capitalize bold-16'}
+          linkStyles={'relative'}
+          underLineStyles={'absolute left-0 top-full h-[2px] w-full bg-primary rounded-full'}
+        />
         <ThemeToggler />
         <div className='xl:hidden'>
           <MobileNav />

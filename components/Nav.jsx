@@ -1,8 +1,38 @@
-import React from 'react'
+import { LINKS } from '@/constants/data'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-const Nav = () => {
+
+
+
+const Nav = ({ containerStyles, linkStyles, underLineStyles }) => {
+
+  const path = usePathname()
+
   return (
-    <div>Nav</div>
+    <nav className={`${containerStyles}`}>
+      {LINKS.map((link, i) => (
+        <Link 
+          href={link.path} 
+          key={i}
+          className={`${linkStyles}`}  
+        >
+          {link.path === path && (
+            <motion.span
+              initial={{y: '-100%'}}
+              animate={{y: 0}}
+              transition={{type: 'tween'}}
+              layoutId='underline'
+              className={`${underLineStyles}`}
+            >
+
+            </motion.span>
+          )}
+          {link.title}
+        </Link>
+      ))}
+    </nav>
   )
 }
 

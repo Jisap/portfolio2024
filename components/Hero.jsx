@@ -3,6 +3,8 @@ import { Button } from './ui/button'
 import { MoveRight } from 'lucide-react'
 import SocialIcons from './SocialIcons'
 import Image from 'next/image'
+import { FaFigma, FaReact, FaUsers } from 'react-icons/fa6'
+import { SiNextdotjs } from 'react-icons/si'
 
 const Hero = () => {
   return (
@@ -45,7 +47,28 @@ const Hero = () => {
           </div>
           {/* photo badges */}
           <div className='hidden xl:flex'>
-
+            <Badge 
+              containerStyles={'absolute top-[60%] left-0'}
+              icon={<FaFigma />}
+            />
+            <Badge
+              containerStyles={'absolute -top-5 right-[45%]'}
+              icon={<FaReact />}
+            />
+            <Badge
+              containerStyles={'absolute bottom-[10%] right-[27%]'}
+              icon={<SiNextdotjs />}
+            />
+            <Badge
+              containerStyles={'absolute top-[10%] -left-12 !h-[55px]'}
+              icon={<FaUsers />}
+              badgeText={'Projects Completed'}
+              endCountNum={8}
+            />
+            <Badge
+              containerStyles={'absolute top-[60%] left-0'}
+              icon={<FaFigma />}
+            />
           </div>
         </div>
       </div>

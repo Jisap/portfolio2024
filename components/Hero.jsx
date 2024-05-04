@@ -5,6 +5,7 @@ import SocialIcons from './SocialIcons'
 import Image from 'next/image'
 import { FaFigma, FaReact, FaUsers } from 'react-icons/fa6'
 import { SiNextdotjs } from 'react-icons/si'
+import Badge from './Badge'
 
 const Hero = () => {
   return (
@@ -64,9 +65,11 @@ const Hero = () => {
               icon={<FaUsers />}
               badgeText={'Projects Completed'}
               endCountNum={8}
+              endCountText={'k'}
             />
             <Badge
-              containerStyles={'absolute top-[60%] left-0'}
+              containerStyles={'absolute top-[22%] right-0'}
+              reviewCount={666}
               icon={<FaFigma />}
             />
           </div>

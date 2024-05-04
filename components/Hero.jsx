@@ -70,7 +70,7 @@ const Hero = () => {
             <Badge
               containerStyles={'absolute top-[22%] right-0'}
               reviewCount={666}
-              icon={<FaFigma />}
+              //icon={<FaFigma />}
             />
           </div>
         </div>

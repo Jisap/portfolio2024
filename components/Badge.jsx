@@ -75,14 +75,23 @@ const Badge = ({
               Recent Reviews
             </h4>
             <div className="flex-col flex gap-3">
+
               <div className="flexCenter gap-x-2 text-black">
-                <span>JD</span>
-                <div>
-                  <span>John Doe</span>
-                  <p>Lorem ipsum dolor...</p>
+                <span className="bg-[#eaeaea] h-8 w-8 flexCenter rounded-full">JD</span>
+                <div className="flex flex-col">
+                  <span className="text-sm font-bold leading-none">John Doe</span>
+                  <p className="text-xs">Lorem ipsum dolor...</p>
                 </div>
               </div>
-          
+
+              <div className="flexCenter gap-x-2 text-black">
+                <span className="bg-[#f9f29f] h-8 w-8 flexCenter rounded-full">EC</span>
+                <div className="flex flex-col">
+                  <span className="text-sm font-bold leading-none">Edward Cullin</span>
+                  <p className="text-xs">Lorem ipsum dolor...</p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

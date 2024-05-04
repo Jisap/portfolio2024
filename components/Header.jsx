@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className={`
       ${header ? 'shadow-md !py-3 dark:!bg-secondary' : '' }
-      sticky top-0 z-30 transition-all max-padd-container flexBetween bg-[#fdf3fb] dark:bg:transparent py-5
+      sticky top-0 z-30 transition-all max-padd-container flexBetween bg-[#fdf3fb] dark:bg-transparent py-5
     `}>
       
       

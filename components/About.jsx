@@ -21,8 +21,8 @@ const About = () => {
             width={444}
             className='rounded-lg'
           />
-          <div>
-            <Play />
+          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flexCenter cursor-pointer'>
+            <Play  className='h-16 w-16 bg-primary p-4 rounded-full z-20 to-primary-foreground'/>
           </div>
           <div></div>
         </div>

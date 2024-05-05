@@ -1,7 +1,7 @@
 import { Play } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
-import { Tabs, TabsList, TabsTrigger } from './ui/tabs'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
 
 const About = () => {
   return (
@@ -35,6 +35,17 @@ const About = () => {
               <TabsTrigger value='education'>Education</TabsTrigger>
               <TabsTrigger value='skills'>Skills</TabsTrigger>
             </TabsList>
+            {/* tabs content */}
+            <div>
+              <TabsContent value='intro'>
+                <h4>HOLA! MY NAME IS JAMES PARKER</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adispicising elit. Molestias,
+                  dolor autem id et consequuntur possimus iure vero deleniti quo eius explicabo.
+                </p>
+                {/* accordion */}
+              </TabsContent>
+            </div>
           </Tabs>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { Play } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
+import Accordion from './Accordion'
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
       </div>
       {/* container */}
       <div className='flex flex-col xl:flex-row gap-16'>
+        
         {/* left */}
         <div className='hidden xl:flexCenter flex-1 relative'>
           <Image 
@@ -27,14 +29,16 @@ const About = () => {
           </div>
           <div className='absolute h-11 bg-secondary rounded-full animate-ping z-10'></div>
         </div>
+
         {/* right */}
-        <div className='flex mx-auto xl:mx-0'>
+        <div className='flex-1 mx-auto xl:mx-0'>
           <Tabs defaultValue='intro'>
             <TabsList>
               <TabsTrigger value='intro'>Introduction</TabsTrigger>
               <TabsTrigger value='education'>Education</TabsTrigger>
               <TabsTrigger value='skills'>Skills</TabsTrigger>
             </TabsList>
+            
             {/* tabs content */}
             <div>
               <TabsContent value='intro'>
@@ -44,6 +48,15 @@ const About = () => {
                   dolor autem id et consequuntur possimus iure vero deleniti quo eius explicabo.
                 </p>
                 {/* accordion */}
+                <Accordion sliceCount={(0,3)} />
+              </TabsContent>
+
+              <TabsContent value='education'>
+                Education tab
+              </TabsContent>
+
+              <TabsContent value='skills'>
+                Skills tab
               </TabsContent>
             </div>
           </Tabs>

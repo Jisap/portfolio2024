@@ -58,7 +58,7 @@ export const EDUCATION = [
     year: "2006",
   },
 ];
-export const EXPERINCE = [
+export const EXPERIENCE = [
   {
     title: "UX/UI Designer - XYZ Company",
     year: "2012 - 2023",

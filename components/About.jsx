@@ -3,6 +3,8 @@ import Image from 'next/image'
 import React from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
 import Accordion from './Accordion'
+import { EDUCATION, EXPERIENCE } from '@/constants/data'
+import LanguagesProgress from './LanguagesProgress'
 
 const About = () => {
   return (
@@ -25,25 +27,25 @@ const About = () => {
             className='rounded-lg'
           />
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flexCenter cursor-pointer'>
-            <Play  className='h-16 w-16 bg-primary p-4 rounded-full z-20 to-primary-foreground'/>
+            <Play  className='h-16 w-16 bg-primary p-4 rounded-full z-20 text-primary-foreground'/>
           </div>
-          <div className='absolute h-11 bg-secondary rounded-full animate-ping z-10'></div>
+          <div className='absolute h-11 w-11 bg-secondary rounded-full animate-ping z-10'></div>
         </div>
 
         {/* right */}
         <div className='flex-1 mx-auto xl:mx-0'>
           <Tabs defaultValue='intro'>
-            <TabsList>
+            <TabsList className='w-full grid grid-cols-3 max-w-[511px] border dark:border-secondary mx-auto xl:mx-0'>
               <TabsTrigger value='intro'>Introduction</TabsTrigger>
               <TabsTrigger value='education'>Education</TabsTrigger>
               <TabsTrigger value='skills'>Skills</TabsTrigger>
             </TabsList>
             
             {/* tabs content */}
-            <div>
+            <div className='pt-12 xl:pt-3 pl-3'>
               <TabsContent value='intro'>
-                <h4>HOLA! MY NAME IS JAMES PARKER</h4>
-                <p>
+                <h4 className='bold-20 uppercase pb-1'>HOLA! MY NAME IS JAMES PARKER</h4>
+                <p className='max-w-md'>
                   Lorem ipsum dolor, sit amet consectetur adispicising elit. Molestias,
                   dolor autem id et consequuntur possimus iure vero deleniti quo eius explicabo.
                 </p>
@@ -52,11 +54,38 @@ const About = () => {
               </TabsContent>
 
               <TabsContent value='education'>
-                Education tab
+                <div className='flex flex-col gap-4'>
+                  <h4 className='bold-20 uppercase'>MY EDUCATION & EXPERIENCE</h4>
+                  {EDUCATION.map((item, i) => (
+                    <div 
+                      key={i}
+                      className='flex gap-4 medium-15'  
+                    >
+                      <div>{item.title}</div>
+                      -
+                      <div>{item.year}</div>
+                    </div>
+                  ))}
+                </div>
+                <hr className='my-3'/>
+                <div className='flex flex-col gap-4'>
+                  {EXPERIENCE.map((item, i) => (
+                    <div 
+                      className='flex gap-4 medium-15'
+                      key={i}
+                    >
+                      <div>{item.title}</div>
+                      -
+                      <div>{item.year}</div>
+                    </div>
+                  ))}
+                </div>
               </TabsContent>
 
               <TabsContent value='skills'>
-                Skills tab
+                <div className='flex flex-col gap-4'>
+                  <LanguagesProgress />
+                </div>
               </TabsContent>
             </div>
           </Tabs>

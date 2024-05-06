@@ -23,7 +23,7 @@ const About = () => {
             src={'/about.png'}
             alt=''
             height={444}
-            width={444}
+            width={666}
             className='rounded-lg'
           />
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flexCenter cursor-pointer'>
@@ -45,7 +45,7 @@ const About = () => {
             <div className='pt-12 xl:pt-3 pl-3'>
               <TabsContent value='intro'>
                 <h4 className='bold-20 uppercase pb-1'>HOLA! MY NAME IS JAMES PARKER</h4>
-                <p className='max-w-md'>
+                <p className='max-w-md mb-3'>
                   Lorem ipsum dolor, sit amet consectetur adispicising elit. Molestias,
                   dolor autem id et consequuntur possimus iure vero deleniti quo eius explicabo.
                 </p>

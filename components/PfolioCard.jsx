@@ -23,17 +23,28 @@ const PfolioCard = ({ url, title, category, des }) => {
             className='rounded-lg'
           />
           {/* overlay */}
-          <div></div>
+          <div className='absolute top-0 left-0 inset-0 bg-[#fdf3fb] dark:bg-background opacity-0 group-hover:opacity-100
+          transition-all duration-200 rounded-lg overflow-hidden'></div>
           {/* icons */}
-          <div>
-            <Link href={'/portfolio'}>
+          <div className='flexCenter gap-x-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+          opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300'>
+            <Link 
+              href={'/portfolio'}
+              className='flexCenter gap-x-2 rounded-md px-1 ring-1 ring-primary text-primary'
+            >
               <MdOutlineZoomOutMap />
             </Link>
-            <Link href={''}>
+            <Link 
+              href={''}
+              className='flexCenter gap-x-2 rounded-md px-1 ring-1 ring-primary text-primary'  
+            >
               <BiSolidLike />
               <p>112</p>
             </Link>
-            <Link href={''}>
+            <Link 
+              href={''}
+              className='flexCenter gap-x-2 rounded-md px-1 ring-1 ring-primary text-primary'  
+            >
               <FaEye />
               <p>222</p>
             </Link>
@@ -42,7 +53,7 @@ const PfolioCard = ({ url, title, category, des }) => {
       </CardHeader>
       {/* info */}
       <CardContent>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle className='mb-2'>{title}</CardTitle>
         <CardDescription>{des}</CardDescription>
       </CardContent>
     </Card>

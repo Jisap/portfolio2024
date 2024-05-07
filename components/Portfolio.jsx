@@ -19,7 +19,7 @@ const Portfolio = () => {
           <h3 className='h3 font-extrabold'>My Creations</h3>
         </div>
         {/* projects */}
-        <div className='mx-auto max-w-[70%] md:min-w-full xl:max-w-[70%]'>
+        <div className='mx-auto max-w-[70%] md:max-w-full xl:max-w-[70%]'>
           <Swiper
             breakpoints={{
               640: {
@@ -40,7 +40,7 @@ const Portfolio = () => {
             {WORKDATA.map((project, i) => {
               if(project.category === 'fullStack'){
                 return (
-                  <SwiperSlide key={i}>
+                  <SwiperSlide key={i} className='flexCenter'>
                     <PfolioCard 
                       url={project.url}
                       title={project.title}

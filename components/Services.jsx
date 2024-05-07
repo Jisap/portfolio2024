@@ -23,7 +23,7 @@ const Services = () => {
               </div>
             </CardHeader>
             <CardContent className='text-center'>
-              <CardTitle className='mb-4 text-primary'>
+              <CardTitle className='mb-4'>
                 {item.title}
               </CardTitle>
               <CardDescription>

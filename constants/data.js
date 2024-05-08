@@ -173,31 +173,31 @@ export const TESTIMONIAL = [
     title: "James Martinez",
     profession: "Director, Nova Gold",
     URL: "/person-1.jpg",
-    desc: "Fantastic destinations, knowledgeable guides, seamless logistics. Spectacular views and memories. Exceeded expectations; worth every penny",
+    des: "Fantastic destinations, knowledgeable guides, seamless logistics. Spectacular views and memories. Exceeded expectations; worth every penny",
   },
   {
     title: "Sophia Anderson",
     profession: "Manager, Safe City",
     URL: "/person-2.jpg",
-    desc: "Unforgettable experiences, friendly staff, and top-notch organization. Highly recommended for adventurous souls. A must-try. Highly recommend",
+    des: "Unforgettable experiences, friendly staff, and top-notch organization. Highly recommended for adventurous souls. A must-try. Highly recommend",
   },
   {
     title: "Lily Walker",
     profession: "Director, High Gold",
     URL: "/person-3.jpg",
-    desc: "Unbelievable sights, professional guides, seamless planning. Unmatched experiences that leave you wanting more. Highly recommended",
+    des: "Unbelievable sights, professional guides, seamless planning. Unmatched experiences that leave you wanting more. Highly recommended",
   },
   {
     title: "Ninna Williams",
     profession: "CEO, Rafa Builds",
     URL: "/person-4.jpg",
-    desc: "Unparalleled expertise, personalized service, breathtaking destinations. Consistently delivers an extraordinary travel experience.",
+    des: "Unparalleled expertise, personalized service, breathtaking destinations. Consistently delivers an extraordinary travel experience.",
   },
   {
     title: "Ali Khan",
     profession: "CEO, High Chase",
     URL: "/person-5.jpg",
-    desc: "Outstanding journeys, knowledgeable guides, seamless execution. Each trip exceeds expectations, ensuring lasting memories and remarkable experiences.",
+    des: "Outstanding journeys, knowledgeable guides, seamless execution. Each trip exceeds expectations, ensuring lasting memories and remarkable experiences.",
   },
 ];
 

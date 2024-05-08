@@ -7,6 +7,7 @@ import { Pagination } from 'swiper/modules'
 import { TESTIMONIAL } from '@/constants/data'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card'
 import Image from 'next/image'
+import Accordion from './Accordion'
 
 
 const Testimonials = () => {
@@ -59,9 +60,12 @@ const Testimonials = () => {
         {/* right */}
         <div className='xl:max-w-[50%]'>
           <div className='flex flex-col xl:justify-center mb-10'>
-            <span className='text-primary'>FAQs</span>
-            <h3>Frequently asked questions</h3>
+            <span className='text-primary uppercase font-bold'>FAQs</span>
+            <h3 className='h3 font-extrabold'>Frequently asked questions</h3>
           </div>
+        </div>
+        <div className='flexCenter xl:justify-start'>
+          <Accordion />
         </div>
 
       </div>
@@ -72,21 +76,22 @@ const Testimonials = () => {
 
 const TestimonialItem = ({ title, url, profession, des }) => {
   return (
-    <Card>
-      <CardHeader>
+    <Card className='my-8 rounded-md z-10'>
+      <CardHeader className='pb-2 flexCenter xl:items-start'>
         <Image 
           src={url}
           alt=''
           height={77}
           width={77}
+          className='rounded-full mb-4 z-20'
         />
       </CardHeader>
       <CardContent>
         <CardTitle>
           {title}
         </CardTitle>
-        <p>{profession}</p>
-        <span>
+        <p className='mb-4'>{profession}</p>
+        <span className='absolute top-0 right-4 z-10 dark:opacity-10'>
           <Image 
             src={'/quote.svg'}
             alt=''

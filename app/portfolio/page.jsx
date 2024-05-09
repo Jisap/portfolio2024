@@ -8,7 +8,7 @@ import { WORKDATA } from "@/constants/data"
 
 const portfolioPage = () => {
   return (
-    <section>
+    <section className="max-padd-container py-16 xl:py-22 bg-[#fdf3fb] dark:bg-transparent">
       {/* title */}
       <div className='flexCenter flex-col font-bold'>
         <span className='text-primary uppercase'>Projects</span>
@@ -24,7 +24,7 @@ const portfolioPage = () => {
           </TabsList>
 
           {/* tabs content */}
-          <div className='pt-12 xl:pt-3 pl-3'>
+          <div className='pt-12 xl:pt-3 px-3'>
             {/* frontend */}
             <TabsContent value='front'>
               <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">

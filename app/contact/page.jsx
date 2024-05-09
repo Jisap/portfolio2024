@@ -38,11 +38,11 @@ const contactPage = () => {
         {/* form */}
         <div className='flex-[1.5p]'>
           <form className='flex flex-col flex-1 gap-4 w-full mx-auto max-w-[33rem]'>
-            <div>
+            <div className='flex gap-2 w-full'>
               <input type='text' placeholder='Enter Your Name' className='regular-14 rounded-lg px-4 py-2 dark:bg-secondary outline-none w-1/2' />
               <input type='email' placeholder='Enter Your Email' className='regular-14 rounded-lg px-4 py-2 dark:bg-secondary outline-none w-1/2' />
             </div>
-            <input type='text' placeholder='Enter Your Subject' className='regular-14 px-4 py-2 dark:bg-secondary outline-none w-1/2' />
+            <input type='text' placeholder='Enter Your Subject' className='regular-14 px-4 py-2 dark:bg-secondary outline-none rounded-lg'/>
             <textarea id='' cols={10} rows={8} placeholder='Enter Your Message' className='regular-14 rounded-lg px-4 py-2 dark:bg-secondary outline-none resize-none'>
             </textarea>
             <div>
